@@ -2,6 +2,9 @@ from django.shortcuts import render
 from .forms import ImageForm
 from .models import Image
 # Create your views here.
+
+
+
 def home(request):
     if request.method == "POST":
         form = ImageForm(request.POST,request.FILES)
